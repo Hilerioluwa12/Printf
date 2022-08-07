@@ -59,7 +59,7 @@ int print_percent(__attribute__((unused))va_list par)
  * Return: number of chars and digits printed
  */
 
-int print_integer(va_list parameters)
+int print_integer(va_list par)
 {
 	int b[10];
 	int c, d, o, p, i;
@@ -75,7 +75,7 @@ int print_integer(va_list parameters)
 		b[c] = (d / o) % 10;
 	}
 
-	if (t < 0)
+	if (d < 0)
 	{
 		_putchar('-');
 		i++;
@@ -95,9 +95,3 @@ int print_integer(va_list parameters)
 
 	return (i);
 }
-=======
- * print_int - function to print integer 
- * @par: number to be printed
- *
- */
->>>>>>> 7ab1e99ec544f51a58bf6cad8f87d2d763d43b32
