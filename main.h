@@ -30,7 +30,13 @@ int print_c(va_list par);
 int print_s(va_list par);
 int print_percent(__attribute__((unused))va_list par);
 int (*get_func(const char a))(va_list);
+<<<<<<< HEAD
 int print_numbers(char c, va_list);
 int print(va_list ap);
 
+=======
+void print_numbers(char *op,unsigned int n, ...);
+int print_integer(va_list par);
+int print_decimal(va_list par);
+>>>>>>> new_branch
 #endif
