@@ -95,3 +95,47 @@ int print_integer(va_list par)
 
 	return (i);
 }
+
+
+/**
+ * print_decimal - to print a decimal
+ * @par: decimal to print
+ *
+ * Return: number of chars and digit printed
+ */
+
+int print_decimal(va_list par)
+{
+	int b[10];
+	int c, d, o, p, i;
+
+	d = va_arg(par, int);
+	i =  0;
+	o = 1000000000;
+	b[0] = d / o;
+
+	for (c = 1; c < 10; c++)
+	{
+		o /= 10;
+		b[c] = (d / o) % 10;
+	}
+
+	if (d < 0)
+	{
+		_putchar('-');
+		i++;
+		for (c = 0; c < 10; c++)
+			b[c] *= -1;
+	}
+
+	for (c = 0, p = 0; c < 10; c++)
+	{
+		p += b[c];
+		if (p != 0 || c == 9)
+		{
+			_putchar('0' + b[c]);
+			i++;
+		}
+	}
+	return (i);
+}
