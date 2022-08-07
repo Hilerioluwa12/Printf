@@ -32,19 +32,20 @@ int print_s(va_list par)
 	for (ct = 0; str[ct] != '\0'; ct++)
 		_putchar(str[ct]);
 
-	return(ct);
+	return (ct);
 }
 
 /**
  * print_percent - function to print %
  * @par: unused
  *
- * Return: always 1 
+ * Return: always 1
  */
 
 int print_percent(__attribute__((unused))va_list par)
 {
 	char b = '%';
+
 	_putchar(b);
 
 	return (1);
