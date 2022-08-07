@@ -50,3 +50,9 @@ int print_percent(__attribute__((unused))va_list par)
 
 	return (1);
 }
+
+/**
+ * print_int - function to print integer 
+ * @par: number to be printed
+ *
+ */

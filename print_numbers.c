@@ -22,7 +22,7 @@ int print(va_list ap)
 int print_numbers(char c, va_list)
 {
 	unsigned int x = 0;
-	find_format frmmt[] = {
+	find_format frmt[] = {
 		{'d', printint},
 		{'i', printint},
 		{'%', print_percent},
@@ -33,6 +33,4 @@ int print_numbers(char c, va_list)
 	{
 		if (c == frmt[x].spac)
 			return (frmt[x].f);
-	}
-	return (NULL);
 }
