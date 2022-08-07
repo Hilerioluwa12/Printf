@@ -1,8 +1,28 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
+/* importing libraries */
+
 #include <stdarg.h>
-#include <stddef.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+/* Definition of type */
+
+/**
+ * struct format - structure for printing various types
+ * @spac: type to print
+ * @f: function to print
+ */
+
+typedef struct  format
+{
+	const char spac;
+	int (*f)(va_list);
+} format_t;
+
+/* Function prototypes */
 
 int _printf(const char *format, ...);
 int _putchar(char c);

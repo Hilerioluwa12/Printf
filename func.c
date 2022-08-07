@@ -25,12 +25,12 @@ int print_c(va_list par)
 int print_s(va_list par)
 {
 	int ct;
-	char *str = va_arg(parameters, char *);
+	char *str = va_arg(par, char *);
 
 	if (str == NULL)
-		str = '(null)';
+		str = "(null)";
 	for (ct = 0; str[ct] != '\0'; ct++)
-		_putchar(str[count]);
+		_putchar(str[ct]);
 
 	return(ct);
 }
