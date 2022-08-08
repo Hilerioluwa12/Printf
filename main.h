@@ -1,6 +1,8 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
+#define BUFSIZE 1024
+
 /* importing libraries */
 
 #include <stdarg.h>
