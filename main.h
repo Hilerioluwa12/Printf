@@ -38,5 +38,7 @@ int print_oct(int num);
 int print_u(unsigned int num);
 int print_Hexa(unsigned int num);
 int print_hex(unsigned int num);
+int print_rev(va_list par);
+int print_spec_chars(va_list par);
 
 #endif
