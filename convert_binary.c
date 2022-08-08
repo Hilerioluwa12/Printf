@@ -114,7 +114,7 @@ int print_hex(unsigned int num)
 		if (num % 16 <= 9)
 			return (print_hex(num / 16) + _putchar(num % 16 + '0'));
 		else
-			return (print_hex(num /16) + _putchar(num % 16 + 87));
+			return (print_hex(num / 16) + _putchar(num % 16 + 87));
 	}
 	return (0);
 }
