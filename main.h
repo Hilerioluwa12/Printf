@@ -1,7 +1,7 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 
-#define BUFSIZE MAXLENGTH
+#define BUFSIZE 1024
 
 /* importing libraries */
 
