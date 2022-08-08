@@ -55,7 +55,7 @@ int print_oct(int num)
 }
 
 /**
- * print_hexa - prints a number in hexa
+ * print_Hexa - prints a number in Hexa(cap)
  * @num: number to be changes
  * Return: number of base 16 characters
  */
@@ -92,4 +92,29 @@ int print_u(unsigned int num)
 		return (_putchar(num + '0'));
 	else
 		return (print_u(num / 10) + _putchar(num % 10 + '0'));
+}
+
+/**
+ * print_hex - print num in hex
+ * @num: unsigned int
+ * Return: number of digit to be printed
+ *
+ */
+int print_hex(unsigned int num)
+{
+	if (num <= 15)
+	{
+		if (num <= 9)
+			return (_putchar(num + '0'));
+		else
+			return (_putchar(num + 'a' - 10));
+	}
+	else
+	{
+		if (num % 16 <= 9)
+			return (print_hex(num / 16) + _putchar(num % 16 + '0'));
+		else
+			return (print_hex(num /16) + _putchar(num % 16 + 87));
+	}
+	return (0);
 }
