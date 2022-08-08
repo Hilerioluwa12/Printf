@@ -37,5 +37,7 @@ int print_unint(va_list par);
 int print_octal(va_list par);
 int print_hexdec_upper(va_list par);
 int print_hexdec_lower(va_list par);
+int print_hex(unsigned long int c, int cap);
+int print_pointer(va_list par);
 
 #endif

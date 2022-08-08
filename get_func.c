@@ -20,6 +20,7 @@ int(*get_func(const char a))(va_list)
 		{'x', print_hexdec_lower},
 		{'X', print_hexdec_upper},
 		{'o', print_octal},
+		{'p', print_pointer},
 		{'\0', NULL}
 	};
 
