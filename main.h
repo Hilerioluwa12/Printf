@@ -33,4 +33,6 @@ int (*get_func(const char a))(va_list);
 void print_numbers(char *op,unsigned int n, ...);
 int print_integer(va_list par);
 int print_decimal(va_list par);
+int print_bin(va_list c);
+
 #endif
