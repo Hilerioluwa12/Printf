@@ -41,15 +41,20 @@ void print_numbers(char *op,unsigned int n, ...);
 int print_integer(va_list par);
 int print_decimal(va_list par);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> new_branch
 =======
-int print_bin(va_list c);
-int print_oct(int num);
-int print_u(unsigned int num);
-int print_Hexa(unsigned int num);
-int print_hex(unsigned int num);
 int print_rev(va_list par);
 int print_spec_chars(va_list par);
 
 >>>>>>> branch_new
+=======
+int print_unint(va_list par);
+int print_octal(va_list par);
+int print_hexdec_upper(va_list par);
+int print_hexdec_lower(va_list par);
+int print_hex(unsigned long int c, int cap);
+int print_pointer(va_list par);
+
+>>>>>>> con_spec
 #endif
