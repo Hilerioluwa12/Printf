@@ -17,7 +17,8 @@ int(*get_func(const char a))(va_list)
 		{'d', print_decimal},
 		{'i', print_integer},
 		{'u', print_unint},
-		{'x', print_hexdec},
+		{'x', print_hexdec_lower},
+		{'X', print_hexdec_upper},
 		{'o', print_octal},
 		{'\0', NULL}
 	};

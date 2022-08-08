@@ -35,6 +35,7 @@ int print_integer(va_list par);
 int print_decimal(va_list par);
 int print_unint(va_list par);
 int print_octal(va_list par);
-int print_hexdec(va_list par);
+int print_hexdec_upper(va_list par);
+int print_hexdec_lower(va_list par);
 
 #endif
