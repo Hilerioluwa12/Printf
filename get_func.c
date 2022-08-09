@@ -16,14 +16,12 @@ int(*get_func(const char a))(va_list)
 		{'%', print_percent},
 		{'d', print_decimal},
 		{'i', print_integer},
-<<<<<<< HEAD
-=======
 		{'u', print_unint},
 		{'x', print_hexdec_lower},
 		{'X', print_hexdec_upper},
 		{'o', print_octal},
+		{'b', print_binary},
 		{'p', print_pointer},
->>>>>>> con_spec
 		{'\0', NULL}
 	};
 
