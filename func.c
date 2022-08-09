@@ -52,7 +52,6 @@ int print_percent(__attribute__((unused))va_list par)
 }
 
 /**
-<<<<<<< HEAD
  * print_integer - to print an integer
  * @par: integer to print
  *

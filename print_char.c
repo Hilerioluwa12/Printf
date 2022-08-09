@@ -30,7 +30,7 @@ int print_spec_chars(va_list par)
 			if (num < 16)
 				_putchar(48),
 					len++;
-			len = len + print_hex(num + 1);
+			len = len + print_hex(num, 1);
 		}
 
 		else
@@ -55,7 +55,7 @@ int print_rev(va_list par)
 	if (!s)
 	{
 		for (i = 0; nl[i]; i++)
-			_putchar(nl[i]);
+		_putchar(nl[i]);
 		return (i);
 	}
 
