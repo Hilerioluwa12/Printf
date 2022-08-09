@@ -20,9 +20,13 @@ int(*get_func(const char a))(va_list)
 		{'x', print_hexdec_lower},
 		{'X', print_hexdec_upper},
 		{'o', print_octal},
+		{'b', print_binary},
 		{'p', print_pointer},
+<<<<<<< HEAD
 		{'r', print_rev},
 		{'S', print_spec_chars},
+=======
+>>>>>>> con_spec
 		{'\0', NULL}
 	};
 
