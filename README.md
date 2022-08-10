@@ -49,3 +49,7 @@
 	> -pedantic: Issue all the mandatory diagnostics listed in the C standard.
 
 	> -std=gnu89: gcc ANSI standard version.
+
+6. Authors
+	> Martins Abayomi Adebayo - @Hilerioluwa12 <a href=" https://github.com/Hilerioluwa12"> </a>
+	>
