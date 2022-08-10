@@ -38,9 +38,14 @@
 
 5. Compiling & Testing:
 	- The project was compiled and tested with GNU GCC 5.4.0 with different error flags:
-	    $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+	> $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+
 	> -Wall: Enables all the warnings about constructions.
+
 	> -Werror: Enables some extra warning flags that are not enabled by -Wall.
+
 	> -Wextra: Make all warnings into hard errors.
+
 	> -pedantic: Issue all the mandatory diagnostics listed in the C standard.
+
 	> -std=gnu89: gcc ANSI standard version.
