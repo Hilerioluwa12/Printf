@@ -2,7 +2,7 @@
 
 1. Requirements
 
-<p>Here are the general requirements: </p>
+	<p>Here are the general requirements: </p>
 	<ul>	
 	<li> Allowed editors: vi, vim, emacs </li>
 	<li>All your files will be compiled on Ubuntu 14.04 LTS</li>
@@ -19,9 +19,17 @@
 	</ul>
 
 2. Compilation
-<li>The code must be compiled this way: $ gcc -Wall -Werror -Wextra -pedantic *.c <li>
-<li>As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)</li>
-<li>Our main files will include your main header file (holberton.h): #include holberton.h</li>
-<li>You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf.</li>
+	<li>The code must be compiled this way: $ gcc -Wall -Werror -Wextra -pedantic *.c</li>
+	<li>As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)</li>
+	<li>Our main files will include your main header file (holberton.h): #include holberton.h</li>
+	<li>You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf.</li>
 
-3. 
+3. Overview:
+	This project consists of a custom made printf function for C language that allows different input arguments and options; its development was part of an intensive coding program in Holberton School Tunis.
+
+4. Description and synopsis of the project:
+	The function returns the number of characters printed (excluding the null byte used to end output to strings). If an output error is encountered, a negative value of -1 is returned.
+
+	- The prototype: 
+	- The main function of the printf function project:
+	> _printf.c
