@@ -24,6 +24,14 @@ typedef struct  format
 	int (*f)(va_list);
 } format_t;
 
+/* Flags */
+
+#define F_MINUS 1
+#define F_PLUS 2
+#define F_ZERO 4
+#define F_HASH 8
+#define F_SPACE 16
+
 /* Function prototypes */
 
 int _printf(const char *format, ...);
@@ -49,5 +57,6 @@ int print_hex(unsigned long int c, int cap);
 int print_pointer(va_list par);
 int print_binary(va_list par);
 int print_rot(va_list par);
+int get_flags(const char *format, int *i);
 
 #endif
