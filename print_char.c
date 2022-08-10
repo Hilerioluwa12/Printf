@@ -10,7 +10,7 @@ int print_spec_chars(va_list par)
 {
 	int i, len = 0;
 	char *s = va_arg(par, char*);
-	unsigned int num;
+	unsigned int h;
 	char nl[] = "(null)";
 
 	if (!s)
@@ -26,11 +26,15 @@ int print_spec_chars(va_list par)
 			_putchar(92);
 			_putchar(120);
 			len = len + 2;
-			num = s[i];
-			if (num < 16)
+			h = s[i];
+			if (h < 16)
 				_putchar(48),
 					len++;
-			len = len + print_hex(num + 1);
+<<<<<<< HEAD
+			len = len + print_hex(h + 1);
+=======
+			len = len + print_hex(num, 1);
+>>>>>>> 62a8936e3d4b462c6fdca0a8493ff9dec0e42e96
 		}
 
 		else
@@ -42,7 +46,7 @@ int print_spec_chars(va_list par)
 
 /**
  * print_rev - prints a string, in reverse
- * @Par: string
+ * @par: string
  * Return: int
  */
 
@@ -55,7 +59,7 @@ int print_rev(va_list par)
 	if (!s)
 	{
 		for (i = 0; nl[i]; i++)
-			_putchar(nl[i]);
+		_putchar(nl[i]);
 		return (i);
 	}
 

@@ -22,6 +22,9 @@ int(*get_func(const char a))(va_list)
 		{'o', print_octal},
 		{'b', print_binary},
 		{'p', print_pointer},
+		{'r', print_rev},
+		{'S', print_spec_chars},
+		{'R', print_rot},
 		{'\0', NULL}
 	};
 
