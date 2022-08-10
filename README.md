@@ -51,5 +51,5 @@
 	> -std=gnu89: gcc ANSI standard version.
 
 6. Authors
-	> Martins Abayomi Adebayo - @Hilerioluwa12 <a href=" https://github.com/Hilerioluwa12"> </a>
+	> Martins Abayomi Adebayo - @Hilerioluwa12 <a href="https://github.com/Hilerioluwa12"> </a>
 	>
