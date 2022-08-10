@@ -19,10 +19,10 @@
 	</ul>
 
 2. Compilation
-	<li>The code must be compiled this way: $ gcc -Wall -Werror -Wextra -pedantic *.c</li>
-	<li>As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)</li>
-	<li>Our main files will include your main header file (holberton.h): #include holberton.h</li>
-	<li>You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf.</li>
+	- The code must be compiled this way: $ gcc -Wall -Werror -Wextra -pedantic *.c
+	- As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
+	- Our main files will include your main header file (holberton.h): #include holberton.h
+	- You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf.
 
 3. Overview:
 	This project consists of a custom made printf function for C language that allows different input arguments and options; its development was part of an intensive coding program in Holberton School Tunis.
@@ -33,3 +33,14 @@
 	- The prototype: 
 	- The main function of the printf function project:
 	> _printf.c
+	- The header file that connects all of the files in the project and allows functions and structures to work with each other through prototype statements:
+	> main.h
+
+5. Compiling & Testing:
+	- The project was compiled and tested with GNU GCC 5.4.0 with different error flags:
+	    $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89
+	> -Wall: Enables all the warnings about constructions.
+	> -Werror: Enables some extra warning flags that are not enabled by -Wall.
+	> -Wextra: Make all warnings into hard errors.
+	> -pedantic: Issue all the mandatory diagnostics listed in the C standard.
+	> -std=gnu89: gcc ANSI standard version.
