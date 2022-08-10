@@ -30,7 +30,11 @@ int print_spec_chars(va_list par)
 			if (h < 16)
 				_putchar(48),
 					len++;
+<<<<<<< HEAD
 			len = len + print_hex(h + 1);
+=======
+			len = len + print_hex(num, 1);
+>>>>>>> 62a8936e3d4b462c6fdca0a8493ff9dec0e42e96
 		}
 
 		else
@@ -42,7 +46,7 @@ int print_spec_chars(va_list par)
 
 /**
  * print_rev - prints a string, in reverse
- * @Par: string
+ * @par: string
  * Return: int
  */
 
@@ -55,7 +59,7 @@ int print_rev(va_list par)
 	if (!s)
 	{
 		for (i = 0; nl[i]; i++)
-			_putchar(nl[i]);
+		_putchar(nl[i]);
 		return (i);
 	}
 

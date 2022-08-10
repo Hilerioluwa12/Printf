@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**in address
+/**
+ * print_hex - to print address
  * @c: unsigned long int
  * @cap: int
  *
@@ -31,11 +32,11 @@ int print_hex(unsigned long int c, int cap)
 }
 
  /**
- * print_pointe - print an address (pointer)
- * @par: argument
- *
- * Return: hex
- */
+  * print_pointer - print an address (pointer)
+  * @par: argument
+  *
+  * Return: hex
+  */
 
 int print_pointer(va_list par)
 {
