@@ -42,7 +42,7 @@ int print_spec_chars(va_list par)
 
 /**
  * print_rev - prints a string, in reverse
- * @Par: string
+ * @par: string
  * Return: int
  */
 

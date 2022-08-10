@@ -48,5 +48,6 @@ int print_hexdec_lower(va_list par);
 int print_hex(unsigned long int c, int cap);
 int print_pointer(va_list par);
 int print_binary(va_list par);
+int print_rot(va_list par);
 
 #endif

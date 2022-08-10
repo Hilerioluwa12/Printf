@@ -32,11 +32,11 @@ int print_hex(unsigned long int c, int cap)
 }
 
  /**
- * print_pointer - print an address (pointer)
- * @par: argument
- *
- * Return: hex
- */
+  * print_pointer - print an address (pointer)
+  * @par: argument
+  *
+  * Return: hex
+  */
 
 int print_pointer(va_list par)
 {
