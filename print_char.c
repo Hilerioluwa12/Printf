@@ -3,6 +3,7 @@
 /**
  * print_spec_chars - convert to special chars
  * @par: argument
+ *
  * Return: int
  */
 
